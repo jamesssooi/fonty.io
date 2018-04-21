@@ -64,3 +64,36 @@
 .landing-hero__cta > .btn + .btn {
   margin-left: $spacing-2;
 }
+
+
+/* Landing Features
+/* -------------------------------------------------------------------------- */
+.landing-features {
+  padding-top: 150px;
+}
+
+.landing-features-item {
+  margin-bottom: 150px;
+}
+
+.landing-features-item__subtitle {
+  display: block;
+  font-size: 14px;
+  color: $color-text-l50;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: $spacing-3;
+}
+
+.landing-features-item__title {
+  font-size: 36px;
+  color: $color-text;
+  font-weight: 900;
+  margin-bottom: $spacing-3;
+}
+
+.landing-features-item__body {
+  font-size: 24px;
+  color: $color-text;
+}

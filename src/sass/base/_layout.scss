@@ -11,3 +11,11 @@ $spacing-3: 0.75rem; // 12px
 $spacing-4: 1rem;    // 16px
 $spacing-5: 1.5rem;  // 24px
 $spacing-6: 3rem;    // 48px
+
+
+/* Container Overrides
+/* @extends Bootstrap
+/* -------------------------------------------------------------------------- */
+.container.container-tight {
+  max-width: 960px;
+}
