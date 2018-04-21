@@ -1,9 +1,9 @@
 {
-  "name": "Boilr",
-  "version": "0.5.0",
-  "description": "A modern front-end boilerplate to kickstart your next project.",
+  "name": "fonty-io",
+  "version": "0.1.0",
+  "description": "",
   "main": "index.js",
-  "author": "Bryon Sigawin <bryon.sigawin@forefront.com.my>",
+  "author": "James Ooi <wengteikooi@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
