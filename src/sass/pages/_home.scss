@@ -23,6 +23,8 @@
 
 .landing-hero > .container {
   max-width: 720px;
+  position: relative;
+  z-index: 10;
 }
 
 .landing-hero__header {
