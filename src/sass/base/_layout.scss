@@ -16,6 +16,11 @@ $spacing-6: 3rem;    // 48px
 /* Container Overrides
 /* @extends Bootstrap
 /* -------------------------------------------------------------------------- */
+.container {
+  padding-left: $spacing-5;
+  padding-right: $spacing-5;
+}
+
 .container.container-tight {
   max-width: 960px;
 }

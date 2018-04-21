@@ -69,11 +69,27 @@
 /* Landing Features
 /* -------------------------------------------------------------------------- */
 .landing-features {
-  padding-top: 150px;
+  padding-top: 48px;
+  @include from-md {
+    padding-top: 150px;
+  }
 }
 
 .landing-features-item {
-  margin-bottom: 150px;
+  margin-bottom: 48px;
+  @include from-md {
+    margin-bottom: 120px;
+  }
+}
+
+.landing-features-item__visual {
+  display: block;
+  margin: 0 auto $spacing-4;
+  max-width: 240px;
+  @include from-md {
+    margin: 0 auto;
+    max-width: 385px;
+  }
 }
 
 .landing-features-item__subtitle {
@@ -87,13 +103,24 @@
 }
 
 .landing-features-item__title {
-  font-size: 36px;
+  font-size: 28px;
   color: $color-text;
   font-weight: 900;
   margin-bottom: $spacing-3;
+  @include from-md {
+    font-size: 36px;
+  }
 }
 
 .landing-features-item__body {
-  font-size: 24px;
+  font-size: 18px;
   color: $color-text;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+
+  @include from-md {
+    font-size: 24px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 }
