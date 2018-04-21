@@ -6,13 +6,19 @@
 /* -------------------------------------------------------------------------- */
 .landing-hero {
   background-color: $color-text;
-  background-image: url('../img/landing-hero-bg.png');
-  background-size: cover;
+  // background-image: url('../img/landing-hero-bg.png');
+  // background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   color: white;
+}
+
+.landing-hero__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .landing-hero > .container {

@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', main);
 
 function main() {
   startHeroCliAnimations();
+  startHeroBackgroundAnimation();
   startDownloadFeatureAnimation();
   startManageFeatureAnimation();
   startConvertFeatureAnimation();
@@ -46,6 +47,24 @@ function startHeroCliAnimations() {
   });
 }
 
+
+/** Starts the hero background animation. */
+function startHeroBackgroundAnimation() {
+  const background = document.querySelector('[data-js=landing-hero-background]');
+  const letters = Array.from(background.querySelectorAll('[data-js=letter]'));
+  const animations = letters.map((letter, index) => {
+    const direction = Math.random() > 0.5 ? [1, 0]: [0, 1];
+    return anime({
+      targets: letter,
+      loop: true,
+      duration: 2000 + Math.random() * 5000,
+      delay: Math.random() * 2000,
+      easing: 'linear',
+      direction: 'alternate',
+      opacity: direction
+    });
+  });
+}
 
 /** Starts the download feature visual animation. */
 function startDownloadFeatureAnimation() {
