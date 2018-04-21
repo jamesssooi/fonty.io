@@ -41,3 +41,9 @@ $color-text-l20: lighten($color-text, 20%);
 $color-text-l30: lighten($color-text, 30%);
 $color-text-l40: lighten($color-text, 40%);
 $color-text-l50: lighten($color-text, 50%);
+
+
+/* Text Colors (Reversed)
+/* -------------------------------------------------------------------------- */
+$color-text-inversed: white;
+$color-text-inversed-l10: rgba(white, 0.8);

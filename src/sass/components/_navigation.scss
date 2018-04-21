@@ -1,0 +1,58 @@
+////
+/// Navigation component.
+////
+
+.navigation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing-5;
+}
+
+.navigation__logo {
+  &:hover { text-decoration: none; }
+}
+
+.navigation__logo .badge {
+  letter-spacing: 1px;
+  font-family: $font-family-mono;
+  background-color: white;
+  color: $color-text;
+}
+
+.navigation__menu {
+  margin-left: auto;
+  font-family: $font-family-mono;
+  display: none;
+  @include from-md {
+    display: block;
+  }
+}
+
+/* Navigation Menu
+/* @overrides Bootstrap
+/* -------------------------------------------------------------------------- */
+.navigation__menu .nav-item + .nav-item {
+  margin-left: $spacing-3;
+}
+
+.navigation__menu .nav-link {
+  color: $color-text-inversed-l10;
+  font-size: 18px;
+  &:hover {
+    color: $color-text-inversed;
+  }
+}
+
+.navigation__menu .nav-link--primary {
+  border: 1px solid $color-text-inversed-l10;
+  border-radius: $spacing-1;
+  &:hover {
+    border-color: $color-text-inversed;
+    background-color: $color-text-inversed;
+    color: $color-text;
+  }
+}
