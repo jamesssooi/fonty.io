@@ -6,8 +6,6 @@
 /* -------------------------------------------------------------------------- */
 .landing-hero {
   background-color: $color-text;
-  // background-image: url('../img/landing-hero-bg.png');
-  // background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -58,6 +56,7 @@
   max-width: 480px;
   margin: 0 auto $spacing-4;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .landing-hero__cli em {
