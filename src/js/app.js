@@ -5,10 +5,12 @@
  */
 import Typed from 'typed.js';
 import anime from 'animejs';
+import zenscroll from 'zenscroll';
 
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
+  console.log(zenscroll);
   startHeroCliAnimations();
   startHeroBackgroundAnimation();
   startDownloadFeatureAnimation();
