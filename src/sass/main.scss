@@ -1,5 +1,12 @@
-h1{
-  display: flex;
-  text-align: center;
-  width: 100%;
-}
+////
+/// fonty.io
+/// Official website for the fonty project.
+/// @author James Ooi <wengteikooi@gmail.com>
+////
+
+/* Base Imports
+/* -------------------------------------------------------------------------- */
+@import './base/_colors.scss';
+@import './base/_layout.scss';
+@import './base/_responsive.scss';
+@import './base/_typography.scss';

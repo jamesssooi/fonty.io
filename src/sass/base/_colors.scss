@@ -1,0 +1,43 @@
+////
+/// Color variables
+////
+
+
+/* Primary Colors
+/* -------------------------------------------------------------------------- */
+$color-primary: rgb(30, 30, 255);
+$color-primary-l10: lighten($color-primary, 10%);
+$color-primary-l20: lighten($color-primary, 20%);
+$color-primary-l30: lighten($color-primary, 30%);
+$color-primary-l40: lighten($color-primary, 40%);
+$color-primary-l50: lighten($color-primary, 50%);
+$color-primary-d10: darken($color-primary, 10%);
+$color-primary-d20: darken($color-primary, 20%);
+$color-primary-d30: darken($color-primary, 30%);
+$color-primary-d40: darken($color-primary, 40%);
+$color-primary-d50: darken($color-primary, 50%);
+
+
+/* Secondary Colors
+/* -------------------------------------------------------------------------- */
+$color-secondary: rgb(48, 48, 54);
+$color-secondary-l10: lighten($color-secondary, 10%);
+$color-secondary-l20: lighten($color-secondary, 20%);
+$color-secondary-l30: lighten($color-secondary, 30%);
+$color-secondary-l40: lighten($color-secondary, 40%);
+$color-secondary-l50: lighten($color-secondary, 50%);
+$color-secondary-d10: darken($color-secondary, 10%);
+$color-secondary-d20: darken($color-secondary, 20%);
+$color-secondary-d30: darken($color-secondary, 30%);
+$color-secondary-d40: darken($color-secondary, 40%);
+$color-secondary-d50: darken($color-secondary, 50%);
+
+
+/* Text Colors
+/* -------------------------------------------------------------------------- */
+$color-text: rgb(15, 15, 17);
+$color-text-l10: lighten($color-text, 10%);
+$color-text-l20: lighten($color-text, 20%);
+$color-text-l30: lighten($color-text, 30%);
+$color-text-l40: lighten($color-text, 40%);
+$color-text-l50: lighten($color-text, 50%);
