@@ -24,16 +24,26 @@
 }
 
 .landing-hero__title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 900;
   white-space: nowrap;
-  margin-bottom: $spacing-4;
+  margin-bottom: $spacing-3;
+  
+  @include from-md {
+    font-size: 48px;
+    margin-bottom: $spacing-4;
+  }
 }
 
 .landing-hero__subtitle {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 300;
-  margin-bottom: $spacing-4;
+  margin-bottom: $spacing-3;
+
+  @include from-md {
+    font-size: 24px;
+    margin-bottom: $spacing-4;
+  }
 }
 
 .landing-hero__cli {

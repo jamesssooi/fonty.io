@@ -9,8 +9,12 @@
   padding: $spacing-4;
   border-radius: $spacing-2;
   font-family: $font-family-mono;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
+
+  @include from-md {
+    font-size: 20px;
+  }
 }
 
 .cli-prompt::before {

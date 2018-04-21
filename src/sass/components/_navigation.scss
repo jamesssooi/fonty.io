@@ -13,6 +13,8 @@
 }
 
 .navigation__logo {
+  margin: 0 auto;
+  @include from-md { margin: 0; }
   &:hover { text-decoration: none; }
 }
 
