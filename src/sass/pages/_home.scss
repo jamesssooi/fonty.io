@@ -1,0 +1,54 @@
+////
+/// Homepage definitions.
+////
+
+/* Landing Hero
+/* -------------------------------------------------------------------------- */
+.landing-hero {
+  background-color: $color-text;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.landing-hero > .container {
+  max-width: 720px;
+}
+
+.landing-hero__header {
+  margin-bottom: $spacing-5;
+}
+
+.landing-hero__title {
+  font-size: 48px;
+  font-weight: 900;
+  white-space: nowrap;
+  margin-bottom: $spacing-4;
+}
+
+.landing-hero__subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: $spacing-4;
+}
+
+.landing-hero__cli {
+  max-width: 480px;
+  margin: 0 auto $spacing-4;
+}
+
+.landing-hero__cta {
+  display: flex;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.landing-hero__cta > .btn {
+  width: 100%;
+}
+
+.landing-hero__cta > .btn + .btn {
+  margin-left: $spacing-2;
+}

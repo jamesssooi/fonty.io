@@ -1,0 +1,22 @@
+////
+/// CLI Prompt component.
+////
+
+.cli-prompt {
+  position: relative;
+  display: block;
+  background-color: $color-secondary;
+  padding: $spacing-4;
+  border-radius: $spacing-2;
+  font-family: $font-family-mono;
+  font-size: 20px;
+  text-align: left;
+}
+
+.cli-prompt::before {
+  content: '>';
+  color: #7ED321;
+  display: inline-block;
+  margin-right: $spacing-2;
+  font-weight: bold;
+}

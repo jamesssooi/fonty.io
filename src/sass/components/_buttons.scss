@@ -1,0 +1,23 @@
+////
+/// Buttons definitions
+/// @overrides Bootstrap
+////
+
+.btn {
+  border: 0;
+  border-radius: 0;
+  font-family: $font-family-mono;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: $spacing-3 $spacing-4;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+}
+
+.btn-secondary {
+  background-color: $color-secondary;
+}

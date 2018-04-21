@@ -10,3 +10,14 @@
 @import './base/_layout.scss';
 @import './base/_responsive.scss';
 @import './base/_typography.scss';
+
+
+/* Component Imports
+/* -------------------------------------------------------------------------- */
+@import './components/_buttons.scss';
+@import './components/_cli-prompt.scss';
+
+
+/* Page Imports
+/* -------------------------------------------------------------------------- */
+@import './pages/_home.scss';
