@@ -51,6 +51,20 @@
   margin: 0 auto $spacing-4;
 }
 
+.landing-hero__cli em {
+  font-style: normal;
+  color: cyan;
+}
+
+.landing-hero__cli .typed-cursor {
+  animation: 0.75s typed-cursor-blink;
+}
+@keyframes typed-cursor-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .landing-hero__cta {
   display: flex;
   margin: 0 auto;
