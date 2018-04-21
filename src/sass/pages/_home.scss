@@ -6,6 +6,8 @@
 /* -------------------------------------------------------------------------- */
 .landing-hero {
   background-color: $color-text;
+  background-image: url('../img/landing-hero-bg.png');
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
