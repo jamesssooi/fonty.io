@@ -124,3 +124,62 @@
     border-bottom: 0;
   }
 }
+
+
+/* Landing Download
+/* -------------------------------------------------------------------------- */
+.landing-download {
+  background-color: $color-primary;
+  background-image: url('../img/landing-hero-bg.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+
+.landing-download > .container {
+  max-width: 720px;
+}
+
+.landing-download__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing-4;
+}
+
+.landing-download__title h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.landing-download__title .badge {
+  background-color: white;
+  color: $color-primary;
+  margin-left: $spacing-3;
+}
+
+.landing-download__instructions {
+  max-width: 540px;
+  white-space: nowrap;
+  margin: 0 auto $spacing-6;
+}
+
+.landing-download__cli {
+  margin: 0 auto;
+  max-width: 480px;
+  margin-bottom: $spacing-6;
+}
+
+.landing-download__cli-copy {
+  position: absolute;
+  right: $spacing-4;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.landing-download__disclaimers a {
+  color: white;
+  text-decoration: underline;
+}
