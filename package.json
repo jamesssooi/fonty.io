@@ -6,6 +6,7 @@
   "author": "James Ooi <wengteikooi@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "animejs": "^2.2.0",
     "typed.js": "^2.0.6"
   },
   "devDependencies": {

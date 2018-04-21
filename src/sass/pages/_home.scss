@@ -107,6 +107,10 @@
   }
 }
 
+.landing-features-item__visual [data-js=spinning] {
+  transform-origin: 50% 50%;
+}
+
 .landing-features-item__subtitle {
   display: block;
   font-size: 14px;
