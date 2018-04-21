@@ -17,7 +17,13 @@
 .btn-primary {
   background-color: $color-primary;
 }
+.btn-primary:hover {
+  background-color: $color-primary-d10;
+}
 
 .btn-secondary {
   background-color: $color-secondary;
+}
+.btn-secondary:hover {
+  background-color: $color-secondary-d10;
 }
