@@ -6,16 +6,21 @@
 import Typed from 'typed.js';
 import anime from 'animejs';
 import zenscroll from 'zenscroll';
+import copyToClipboard from 'copy-to-clipboard';
 
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
-  console.log(zenscroll);
+
+  // Start animations
   startHeroCliAnimations();
   startHeroBackgroundAnimation();
   startDownloadFeatureAnimation();
   startManageFeatureAnimation();
   startConvertFeatureAnimation();
+
+  // Enable functionalities
+  enableCopyButton();
 }
 
 /** Starts the command prompt typing animation. */
@@ -128,4 +133,15 @@ function startConvertFeatureAnimation() {
       translateY: [0, offset],
     });
   });
+}
+
+
+/** Enables the copy button in the downloads section. */
+function enableCopyButton() {
+  const button = document.querySelector('[data-js=copy-btn]');
+  const text = document.querySelector('[data-js=copy-text]').textContent;
+  button.addEventListener('click', (e) => {
+    copyToClipboard(text);
+    button.textContent = 'Copied!';
+  })
 }
