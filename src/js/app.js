@@ -25,14 +25,14 @@ function main() {
 
 /** Starts the command prompt typing animation. */
 function startHeroCliAnimations() {
-  const fontNames = ['Lato', 'Open Sans', 'Merriweather', 'Montserrat', 'Poppins'];
+  const fontNames = ['Lato', 'Open Sans', 'Merriweather', 'Montserrat', 'Roboto'];
   const heroCli = document.querySelector('[data-js=hero-cli]');
   const heroCliTyped = new Typed(heroCli, {
     strings: [
       'fonty install <em>Lato</em>',
       'fonty uninstall <em>Lato</em>',
       'fonty list',
-      'fonty webfont --files <em>*.ttf</em>',
+      'fonty webfont <em>*.ttf</em>',
     ],
     loop: true,
     startDelay: 100,
@@ -40,7 +40,8 @@ function startHeroCliAnimations() {
     backSpeed: 40,
     backDelay: 2000,
     cursorChar: '_',
-    preStringTyped: (index, self) => {
+    smartBackspace: false,
+    onStringTyped: (index, self) => {
       // Randomize `fonty install <font_name>`
       if (index == 0) {
         self.strings[0] = `fonty install <em>${fontNames[Math.floor(Math.random()*fontNames.length)]}</em>`;
@@ -48,7 +49,7 @@ function startHeroCliAnimations() {
 
       // Randomize `fonty uninstall <font_name>`
       if (index == 1) {
-        self.strings[0] = `fonty uninstall <em>${fontNames[Math.floor(Math.random()*fontNames.length)]}</em>`;
+        self.strings[1] = `fonty uninstall <em>${fontNames[Math.floor(Math.random()*fontNames.length)]}</em>`;
       }
     }
   });
