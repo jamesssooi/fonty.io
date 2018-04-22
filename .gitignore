@@ -1,3 +1,6 @@
+# Deploy script
+deploy.sh
+
 # Output Directories
 dist
 build
