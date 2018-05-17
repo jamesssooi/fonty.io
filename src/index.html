@@ -34,6 +34,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119440137-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-119440137-1');
+  </script>
+
 </head>
 <body>
 
@@ -41,7 +50,7 @@
 <nav class="navigation">
 
   <!-- Fonty Logo -->
-  <a href="https://fonty.io" class="navigation__logo">
+  <a href="https://fonty.io" class="navigation__logo" gtag-click="click:nav:logo">
     <img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="Logo of fonty">
     <span class="badge badge-primary">ALPHA</span>
   </a>
@@ -49,13 +58,13 @@
   <!-- Navigation Menu -->
   <div class="navigation__menu">
     <ul class="nav">
-      <li class="nav-item">
+      <li class="nav-item" gtag-click="click:nav:docs">
         <a class="nav-link" href="https://github.com/jamesssooi/fonty#table-of-contents">Docs</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" gtag-click="click:nav:github">
         <a class="nav-link" href="https://github.com/jamesssooi/fonty">GitHub</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" gtag-click="click:nav:download">
         <a class="nav-link nav-link--primary" href="#download">Download</a>
       </li>
     </ul>
@@ -114,8 +123,8 @@
 
     <!-- Call to Actions -->
     <div class="landing-hero__cta">
-      <a class="btn btn-primary btn-lg" href="#download">Download</a>
-      <a class="btn btn-secondary btn-lg" href="https://github.com/jamesssooi/fonty#table-of-contents">Docs</a>
+      <a class="btn btn-primary btn-lg" href="#download" gtag-click="click:hero:download">Download</a>
+      <a class="btn btn-secondary btn-lg" href="https://github.com/jamesssooi/fonty#table-of-contents" gtag-click="click:hero:docs">Docs</a>
     </div>
 
   </div>
@@ -319,13 +328,13 @@
     <div class="landing-download__cli">
       <div class="cli-prompt">
         <span data-js="copy-text">pip install fonty</span>
-        <button class="landing-download__cli-copy btn btn-dark d-none d-sm-block" data-js="copy-btn">Copy</button>
+        <button class="landing-download__cli-copy btn btn-dark d-none d-sm-block" data-js="copy-btn" gtag-click="click:download:copy">Copy</button>
       </div>
     </div>
 
     <!-- Disclaimers -->
     <div class="landing-download__disclaimers">
-      Requires <strong><a href="http://docs.python-guide.org/en/latest/starting/installation/">Python 3</a></strong>. Mac and Windows only, Linux support is coming soon.
+      Requires <strong><a href="http://docs.python-guide.org/en/latest/starting/installation/" gtag-click="click:download:python3">Python 3</a></strong>. Mac and Windows only, Linux support is coming soon.
     </div>
 
   </div>
@@ -337,12 +346,12 @@
 
     <!-- Author Footnote -->
     <div class="col-md text-md-left mb-3 mb-md-0">
-      fonty by <a href="https://github.com/jamesssooi">James Ooi</a>
+      fonty by <a href="https://github.com/jamesssooi" gtag-click="click:footer:jamesooi">James Ooi</a>
     </div>
 
     <!-- Footer Links -->
     <div class="col-md text-md-right">
-      <a href="https://github.com/jamesssooi/fonty">View on GitHub</a>
+      <a href="https://github.com/jamesssooi/fonty" gtag-click="click:footer:github">View on GitHub</a>
     </div>
 
   </div>

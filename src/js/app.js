@@ -11,7 +11,6 @@ import copyToClipboard from 'copy-to-clipboard';
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
-
   // Start animations
   startHeroCliAnimations();
   startHeroBackgroundAnimation();
@@ -21,6 +20,7 @@ function main() {
 
   // Enable functionalities
   enableCopyButton();
+  enableClickTracking();
 }
 
 /** Starts the command prompt typing animation. */
@@ -145,4 +145,26 @@ function enableCopyButton() {
     copyToClipboard(text);
     button.textContent = 'Copied!';
   })
+}
+
+
+/** Enables the `gtag-click` attributes. */
+function enableClickTracking() {
+  const clickTrackers = Array.from(document.querySelectorAll("[gtag-click]"));
+  clickTrackers.forEach((element) => {
+    const eventString = element.getAttribute('gtag-click');
+    const split = eventString.split(';');
+    const eventName = split[0];
+    const eventLabel = split[1];
+
+    // Track clicks
+    element.addEventListener('click', () => {
+      gtag('event', eventName, { 'event_label': eventLabel });
+    });
+
+    // Also track middle clicks
+    element.addEventListener('auxclick', () => {
+      gtag('event', eventName, { 'event_label': eventLabel });
+    });
+  });
 }
